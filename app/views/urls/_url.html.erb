@@ -1,12 +1,8 @@
 <div id="<%= dom_id url %>">
-  <p>
-    <strong>Long url:</strong>
-    <%= url.long_url %>
-  </p>
-
-  <p>
-    <strong>Short url:</strong>
-    <%= url.short_url %>
-  </p>
+  <%= link_to  url.long_url, url.long_url %>
+  <br>
+  <div class="py-10">
+    <%= link_to  url.short_url, url.short_url %>
+  </div>
 
 </div>

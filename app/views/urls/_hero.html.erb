@@ -1,0 +1,73 @@
+<div class="relative" id="home">
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+        <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+    </div>
+    <%= container do %>
+      <div class="relative ml-auto pt-36">
+        <div class="mx-auto text-center lg:w-2/3">
+          <!-- Split the locale from first to pre last word and after -->
+          <h1 class="text-5xl font-bold text-gray-900 dark:text-white md:text-6xl xl:text-7xl">
+            <span class="text-primary">
+            <%= t('home.hero.title').split(' ')[0] %>
+            </span>
+            <%= t('home.hero.title').split(' ')[1..-1].join(' ') %>
+          </h1>
+          <p class="mt-8 text-gray-700 dark:text-gray-300">
+            <%= t('home.hero.subtitle') %>
+          </p>
+          <p class="mt-8 text-gray-700 dark:text-gray-300">
+            <%= t('home.hero.description') %>
+          </p>
+
+          <div class="flex flex-wrap justify-center mt-16 gap-y-4 gap-x-6">
+              <a
+                href="#"
+                class="relative flex items-center justify-center w-full px-6 h-11 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+              >
+                <span class="relative text-base font-semibold text-white"
+                  >Get started</span
+                >
+              </a>
+              <a
+                href="#"
+                class="relative flex items-center justify-center w-full px-6 h-11 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+              >
+                <span
+                  class="relative text-base font-semibold text-primary dark:text-white"
+                  >Learn more</span
+                >
+              </a>
+          </div>
+          <div 
+            class="justify-between hidden py-8 mt-16 border-gray-100 border-y dark:border-gray-800 sm:flex">
+              <div class="text-left">
+                  <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+                    <%= t('home.hero.open_source.title') %>
+                  </h6>
+                  <p class="mt-2 text-gray-500">
+                    <%= t('home.hero.open_source.description') %>
+                  </p>
+              </div>
+              <div class="text-left">
+                  <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+                    <%= t('home.hero.free.title') %>
+                  </h6>
+                  <p class="mt-2 text-gray-500">
+                    <%= t('home.hero.free.description') %>
+                  </p>
+              </div>
+
+              <div class="text-left">
+                  <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+                    <%= t('home.hero.analytics.title') %>
+                  </h6>
+                  <p class="mt-2 text-gray-500">
+                    <%= t('home.hero.analytics.description') %>
+                  </p>
+              </div>
+
+            </div>
+            </div>
+    <% end %>
+</div>

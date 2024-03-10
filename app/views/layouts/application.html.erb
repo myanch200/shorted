@@ -17,7 +17,13 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-white dark:bg-gray-900">
+    <%= render 'nav' %>
+    <main class="py-10">
+      <%=container do %>
+      <%= yield %>
+      <%end %>
+    </main>
+    <%= render 'footer' %>
   </body>
 </html>

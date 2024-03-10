@@ -1,31 +1,18 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  home:
+    hero:
+      title: "Simplify Your Links"
+      subtitle: "A robust, open-source URL shortening service designed for simplicity and efficiency."
+      description: "Empower your digital presence with our user-friendly URL shortener. Perfect for businesses, developers, and individuals seeking to streamline their online communications, enhance link management, and track engagement with ease. Join our growing community and start transforming your lengthy URLs into neat, manageable links today!"
+
+      open_source:
+        title: "Open Source"
+        description: "Our URL shortener is open-source and free to use. We believe in the power of open-source software and are committed to providing a reliable, secure, and efficient service to our users."
+
+      free:
+        title: "Free"
+        description: "Our URL shortener provides a free tier that includes all the features you need to get started. No credit card required. No hidden fees. No strings attached."
+
+      analytics:
+        title: "Analytics"
+        description: "Gain insights into your audience and track engagement with our built-in analytics. Understand your audience, optimize your links, and make data-driven decisions to grow your business."
